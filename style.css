@@ -1,0 +1,52 @@
+body {
+    background-color: grey;
+    margin: 0 auto;
+}
+header {
+    background-color: crimson;
+    padding: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navigation-title > nav > a {
+    text-decoration: none;
+    color: green;
+    background-color: white;
+    display: incline-block;
+    padding: 1em;
+    border-radius: 0.3em;
+    /* transition animation */
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-delay: 0ms;
+    transition-timing-function: ease;
+    align-self: stretch;
+}
+.navigation-title > nav > a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+#main-content {
+    background-image: url(/pictures/minecrafthouse1.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50em;
+    width: 100%;
+}
+#main-content > section > .texts {
+    padding: 1em;
+    background-color: white;
+    width: 25%;
+    height: 33%;
+    align-items: center;
+}
+#main-content > section > .texts > aside {
+    padding: 1em;
+    border-radius: 1em;
+    background-color: rgb(142, 40, 4);
+    display: flex;
+}
+.footer {
+    background-color: orange;
+}
