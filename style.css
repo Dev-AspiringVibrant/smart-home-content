@@ -13,12 +13,11 @@ header {
     text-decoration: none;
     color: green;
     background-color: white;
-    display: incline-block;
+    display: inline-block;
     padding: 1em;
     border-radius: 0.3em;
     /* transition animation */
     transition-duration: 250ms;
-    transition-property: background-color;
     transition-delay: 0ms;
     transition-timing-function: ease;
     align-self: stretch;
@@ -33,20 +32,51 @@ header {
     background-size: contain;
     height: 50em;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-#main-content > section > .texts {
+.content-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.content-items > .texts {
     padding: 1em;
+    border-radius: 0.5em;
     background-color: white;
     width: 25%;
     height: 33%;
-    align-items: center;
+    display: block;
+    align-self: center;
 }
-#main-content > section > .texts > aside {
+.content-items > .texts > aside {
     padding: 1em;
     border-radius: 1em;
     background-color: rgb(142, 40, 4);
-    display: flex;
 }
 .footer {
     background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.alt-nav {
+    display: flex;
+    background-color: white;
+    height: fit-content;
+    justify-content: space-between;
+}
+.alt-nav > a {
+    display: flex;
+}
+.alt-nav > p {
+    display: flex;
+}
+.footer-1 {
+    background-color: white;
+    max-width: fit-content;
+    width: 10em;
 }
