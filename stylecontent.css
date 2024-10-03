@@ -33,6 +33,7 @@ header {
     background-size: contain;
     height: 50em;
     width: 100%;
+    display: flex;
 }
 #main-content > section > .texts {
     padding: 1em;

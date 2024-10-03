@@ -2,6 +2,11 @@ body {
     background-color: grey;
     margin: 0 auto;
 }
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
 header {
     background-color: crimson;
     padding: 4em;
@@ -31,10 +36,12 @@ header {
     background-repeat: no-repeat;
     background-size: contain;
     height: 50em;
-    width: 100%;
+    width: 100em;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .content-items {
     display: flex;
@@ -67,13 +74,31 @@ header {
     display: flex;
     background-color: white;
     height: fit-content;
-    justify-content: space-between;
+    align-content: space-between;
+    justify-content: space-around;
+    align-self: stretch; 
+    flex-direction: row;
 }
-.alt-nav > a {
+.room-alt-nav {
     display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
 }
-.alt-nav > p {
+.features-alt-nav {
     display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+.safety-alt-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* flex-wrap: wrap; */
 }
 .footer-1 {
     background-color: white;
