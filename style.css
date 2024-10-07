@@ -1,11 +1,12 @@
 body {
+    font-family: "Roboto", "system-ui";
     background-color: grey;
     margin: 0 auto;
 }
-img {
-    max-width: 100%;
-    object-fit: cover;
-}
+/* img { */
+    /* max-width: 100%; */
+    /* object-fit: cover; */
+/* } */
 
 header {
     background-color: crimson;
@@ -14,6 +15,17 @@ header {
     justify-content: space-around;
     align-items: center;
 }
+
+section.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+section.col.one-third {
+    width: calc(100%/3);
+}
+
 .navigation-title > nav > a {
     text-decoration: none;
     color: green;
@@ -31,17 +43,15 @@ header {
     background-color: black;
     color: whitesmoke;
 }
-#main-content {
+#hero {
     background-image: url(/pictures/minecrafthouse1.webp);
     background-repeat: no-repeat;
     background-size: contain;
     height: 50em;
-    width: 100em;
+    /* width: 100em; */
     display: flex;
-    align-content: space-evenly;
-    justify-content: space-evenly;
-    flex-direction: column;
-    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 .content-items {
     display: flex;
@@ -75,8 +85,7 @@ header {
     background-color: white;
     height: fit-content;
     align-content: space-between;
-    justify-content: space-around;
-    align-self: stretch; 
+    justify-content: space-around; 
     flex-direction: row;
 }
 .room-alt-nav {
@@ -84,24 +93,28 @@ header {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 .features-alt-nav {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 .safety-alt-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 .footer-1 {
     background-color: white;
     max-width: fit-content;
     width: 10em;
+}
+
+.center {
+    text-align: center;
 }
