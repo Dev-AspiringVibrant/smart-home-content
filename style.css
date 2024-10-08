@@ -46,7 +46,7 @@ section.col.one-third {
 #hero {
     background-image: url(/pictures/minecrafthouse1.webp);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 50em;
     /* width: 100em; */
     display: flex;
@@ -88,27 +88,6 @@ section.col.one-third {
     justify-content: space-around; 
     flex-direction: row;
 }
-.room-alt-nav {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.features-alt-nav {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.safety-alt-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
 .footer-1 {
     background-color: white;
     max-width: fit-content;
@@ -117,4 +96,13 @@ section.col.one-third {
 
 .center {
     text-align: center;
+}
+.container {
+    background-color: white;
+    padding: 1em;
+    border-radius: 0.7em;
+}
+.spacearound {
+    display: flex;
+    justify-content: space-around;
 }
