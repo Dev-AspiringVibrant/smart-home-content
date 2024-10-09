@@ -82,7 +82,6 @@ section.col.one-third {
 }
 .alt-nav {
     display: flex;
-    background-color: white;
     height: fit-content;
     align-content: space-between;
     justify-content: space-around; 
@@ -102,7 +101,16 @@ section.col.one-third {
     padding: 1em;
     border-radius: 0.7em;
 }
+.container2 {
+    background-color: lightgrey;
+    padding: 1em;
+    border-radius: 0.7em;
+}
 .spacearound {
     display: flex;
     justify-content: space-around;
+}
+.column {
+    display: flex;
+    flex-direction: column;
 }
