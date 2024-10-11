@@ -42,6 +42,7 @@ header {
 }
 .scrollbar {
     overflow-x: scroll;
+    overflow-y: overlay;
     scrollbar-color: rgb(212, 133, 133) lightgrey;
 }
 .scrollbar:hover {

@@ -82,7 +82,7 @@ section.col.one-third {
 .alt-nav {
     display: flex;
     height: fit-content;
-    align-content: space-between;
+    align-content: space-evenly;
     justify-content: space-around; 
     flex-direction: row;
 }
@@ -104,6 +104,8 @@ section.col.one-third {
     background-color: lightgrey;
     padding: 1em;
     border-radius: 0.7em;
+    display: flex;
+    justify-content: space-around;
 }
 .spacearound {
     display: flex;
@@ -155,6 +157,8 @@ section.col.one-third {
     float: left;
     width: 70%;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
   }
   
   /* Place text to the right */
@@ -171,7 +175,7 @@ section.col.one-third {
   
   /* The bar container */
   .bar-container {
-    width: 100%;
+    width: 80%;
     background-color: #f1f1f1;
     text-align: center;
     color: white;
@@ -209,4 +213,16 @@ section.col.one-third {
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
+  }
+  .transform1 {
+    transform: translate(23em, -0.2em);
+  }
+  .transform2 {
+    transform: translate(-21em, -0.2em);
+  }
+  .navt1 {
+transform: translateX(-11.5em);
+  }
+  .navt2 {
+transform: translateX(11.5em);
   }
